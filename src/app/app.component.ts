@@ -32,4 +32,20 @@ export class AppComponent {
             player.level -= 1;
         }
     }
+
+    public removePlayer(player) {
+        this.players.splice(this.players.indexOf(player), 1);
+    }
+
+    public sortPlayers() {
+        this.players.sort((a, b) => {
+            if (a.level > b.level) {
+                return -1
+            } else if (a.level < b.level) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+    }
 }

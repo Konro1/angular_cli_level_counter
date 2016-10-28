@@ -6,9 +6,9 @@
                 Name
             </th>
             <th>
-                Level
+                Level <a (click)="sortPlayers()" href="javascript:void(0);">sort</a>
             </th>
-            <th style="width: 27%;">
+            <th style="width: 38%;">
                 Actions
             </th>
         </tr>
@@ -23,6 +23,8 @@
                             class="glyphicon glyphicon-plus"></i>&nbsp;</button>
                     <button type="button" class="btn btn-sm btn-default" (click)="decrementLevel(player)"><i
                             class="glyphicon glyphicon-minus"></i>&nbsp;</button>
+                    <button type="button" class="btn btn-sm btn-default" (click)="removePlayer(player)"><i
+                            class="glyphicon glyphicon-remove"></i>&nbsp;</button>
                 </div>
             </td>
         </tr>
